@@ -12,6 +12,9 @@ function App() {
           <Route index element={<MoviesList />} />
           <Route path="/movies/:movieId" element={<MoviesDetails />} />
         </Route>
+        <Route path="/contact" element={<Layout />}>
+          <Route index element={<h1>contact Page</h1>} />
+        </Route>
       </Routes>
     </ChakraProvider>
   );
