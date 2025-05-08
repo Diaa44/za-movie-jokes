@@ -17,6 +17,7 @@ function JokesGenerator({ movieId, movieTitle, movieDescription }) {
       await dispatch(
         fetchJoke({ movieId, movieTitle, movieDescription })
       ).unwrap();
+      // eslint-disable-next-line no-unused-vars
     } catch (err) {
       toast({
         title: "Failed to load joke",
